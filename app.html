@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script type="module" src="app.js"></script>
+    
+    
+    </script>
+    
+</head>
+<body>
+    <!-- width="2000px",height="1400px" -->
+    <canvas id = "main-canvas" tabindex="0"></canvas>
+    <canvas id = "racegame-canvas"    style="display: none;" tabindex="0"></canvas>
+    <canvas id = "ropegame-canvas"    style="display: none;"  tabindex="0"></canvas>
+    <canvas id=  "setting-canvas"     style="display: none;box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;" tabindex="0"></canvas>
+    <canvas id=  "game-select-canvas" style="display: none;" tabindex="0"></canvas>
+    <canvas id=  "game-over-canvas"   style="display: none; border-radius: 15px; box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;" tabindex="0"></canvas>
+
+    
+    <audio src="./sound/play-theme.mp3" id="playAudio"></audio>
+    <audio src="./sound/효과음/버튼음1.wav" id="buttonAudio"></audio>
+    <!-- <audio src="./sound/play-theme.mp3" id="playAudio"></audio> -->
+    <audio src="./sound/main-theme.mp3" id="mainAudio"></audio>
+<!--     <audio src="./sound/효과음/달리기편집.mp3" id="runAudio"></audio> -->
+    <audio src="./sound/효과음/점프2.wav" id="jumpAudio"></audio>
+    <audio src="./sound/효과음/성공.mp3" id="completeAudio"></audio>
+    <audio src="./sound/효과음/하트사라짐.mp3" id="heartlowAudio"></audio>
+
+
+    <audio src="./sound/효과음/버튼음3.wav" id="o_audio" ></audio>
+    <script type="text/javascript">
+      setTimeout(function(){
+        document.getElementById("o_audio").play();
+        console.log('opening is started just now');
+      }, 1000)
+    </script>
+
+    <img id="play"    style="display: none;" src="/img/btn-play.png">
+    <img id="race"    style="display: none;" src="/img/btn-race.png">
+    <img id="rope"    style="display: none;" src="/img/btn-rope.png">
+    <img id="rules"    style="display: none;" src="/img/btn-rules.png">
+    <img id="setting" style="display: none;" src="/img/btn-setting.png">
+    <img id="close"   style="display: none;" src="/img/btn-close.png">
+    <img id="check"   style="display: none;" src="/img/btn-check.png">
+    <img id="yes"     style="display: none;" src="/img/btn-yes.png">
+    <img id="no"      style="display: none;" src="/img/btn-no.png">
+    <img id="yes11"      style="display: none;" src="/img/22.jpg">
+    <img id="no22"      style="display: none;" src="/img/11.jpg">
+
+    
+    <img style="display: none;"src="/img/bg-main.png" alt="">
+    <img style="display: none;"src="/img/bg-rope.png" alt="">
+    <img style="display: none;"src="/img/bg-run.png" alt="">
+    <!-- <img id="bg-setting" style="display: none;" src="/img/bg-setting.png"> -->
+    <img style="display: none;"src="/img/bushes.png" alt="">
+    <img id="bg-gameover" style="display: none;"src="/img/bg-gameover.png" alt="">
+    <img id="bg-clear" style="display: none;"src="/img/clear.png" alt="">
+    <img id= "bg-rules" style="display: none;" src="img/bg-rules.png">
+    <img id= "main" style="display: none;" src="img/mainBackground.png">
+
+    <img id = "hurdle" style="display: none;" src="/img/cupa.png">
+    <img id = "character" style="display: none;" src="/img/character-runner.png">
+    <img id = "hitcharacter" style="display: none;" src="/img/character-runnerS.png">
+    <img id = "life" style="display: none;" src="/img/life.png">
+    <img id = "backtimebar" style="display: none;" src="/img/timebar01.png">
+    <img id = "fronttimebar" style="display: none;" src="/img/timebar02.png">
+
+    <img style="display: none;"src="/img/character-back.png" alt="">
+    <img style="display: none;"src="/img/character-kurby.png" alt="">
+    <img style="display: none;"src="/img/character-mushroom.png" alt="">
+    <img style="display: none;"src="/img/character-support.png" alt="">
+    <img style="display: none;"src="/img/character-support2.png" alt="">
+    <img style="display: none;"src="/img/clouds.png" alt="">
+    <img style="display: none;"src="/img/trees.png" alt="">
+
+    
+</body>
+</html>
